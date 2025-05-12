@@ -60,4 +60,16 @@ for key, value in drummer_endorsements.items():
     print(f"{key}: {value}") # this will print the keys and values in the dictionary
 
 
+#Using the dictionary mapping method
+dog = "cuddly"
+
+dict_map = {
+    "hungry": "Refilling food bowl.",
+    "thirsty": "Refilling water bowl.",
+    "playful": "Playing tug-of-war.",
+    "cuddly": "Snuggling.",
+}
+
+owner = dict_map.get(dog, "Let me get on with what I was doing.")
+print(owner)  # Output: Snuggling.
 
