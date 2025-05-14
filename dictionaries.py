@@ -79,9 +79,9 @@ def pour_coffee(size):
         "grande": 16,
         "venti": 20,
     }
-    return size_to_ounce_map.get(size, 0)  # Default to 0 if size is not found
+    return size_to_ounce_map.get(size, "Please enter valid cup size")  # Default to "Please enter valid cup size" if size is not found
   # Output: 12
 print(pour_coffee("tall"))  # Output: 12
 print(pour_coffee("grande"))  # Output: 16
 print(pour_coffee("venti"))  # Output: 20
-print(pour_coffee("trenta"))  # Output: 0 because "trenta" is not in the dictionary
+print(pour_coffee("trenta"))  # Output: "Please enter valid cup size" because "trenta" is not in the dictionary
