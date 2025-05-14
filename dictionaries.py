@@ -59,6 +59,9 @@ print(drummer_endorsements.items())
 for key, value in drummer_endorsements.items():
     print(f"{key}: {value}") # this will print the keys and values in the dictionary
 
+# Iterating using list comprehension
+print([item for item in drummer_endorsements.items()]) 
+
 
 #Using the dictionary mapping method
 dog = "cuddly"
