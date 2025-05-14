@@ -73,3 +73,15 @@ dict_map = {
 owner = dict_map.get(dog, "Let me get on with what I was doing.")
 print(owner)  # Output: Snuggling.
 
+def pour_coffee(size):
+    size_to_ounce_map = {
+         "tall": 12,
+        "grande": 16,
+        "venti": 20,
+    }
+    return size_to_ounce_map.get(size, 0)  # Default to 0 if size is not found
+  # Output: 12
+print(pour_coffee("tall"))  # Output: 12
+print(pour_coffee("grande"))  # Output: 16
+print(pour_coffee("venti"))  # Output: 20
+print(pour_coffee("trenta"))  # Output: 0 because "trenta" is not in the dictionary
